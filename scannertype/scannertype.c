@@ -15,7 +15,7 @@ char *tokenTypeToString(int token) {
         case PORT: return "PORT";
         case COLON: return "COLON";
         case IDENTIFIER: return "IDENTIFIER";
-        case INTEGER: return "INTEGER";
+        case NUMBER: return "NUMBER";
         default: return "UNKNOWN"; // Fallback for unrecognized tokens
     }
 }
