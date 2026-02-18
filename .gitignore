@@ -1,0 +1,12 @@
+# Generated C source files
+lex.yy.c
+parser.tab.c
+parser.tab.h
+
+# Compiled executable
+calc
+scannertype
+
+# Object files (if any are created)
+*.o
+
