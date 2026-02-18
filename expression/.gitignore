@@ -1,0 +1,14 @@
+# Flex generated scanner
+lex.yy.c
+
+# Bison generated parser
+*.tab.c
+*.tab.h
+*.output
+
+# Compiled executable
+calc
+a.out
+
+# Standard C build artifacts (if applicable)
+*.o

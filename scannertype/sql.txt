@@ -1,0 +1,4 @@
+db_type: mysql
+db_name: mydatabase
+db_table_prefix: wp_
+db_port: 3306
