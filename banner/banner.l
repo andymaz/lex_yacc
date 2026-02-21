@@ -4,6 +4,9 @@
     #include <ctype.h>
 %}
 
+%option noyywrap
+
+
 %%
 [^a-zA-Z\t\n ] {
     /* Reject any non-alphabetic character except whitespace */
