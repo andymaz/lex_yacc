@@ -4,8 +4,7 @@
     #include <ctype.h>
 %}
 
-%option noyywrap
-
+%option noyywrap   
 
 %%
 [^a-zA-Z\t\n ] {
