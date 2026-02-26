@@ -114,14 +114,34 @@ void postOrder(Tree* tree) {
     printf("\n");
 }
 
+void dfs(Node* node) {
+    if (node == NULL) return;
+
+    printf("%d ", node->data);
+
+    // Visit children
+    dfs(node->left);
+    dfs(node->right);
+}
+
+void dfsTraversal(Tree* tree) {
+    dfs(tree->root);
+    printf("\n");
+}
+
 int main(void) { 
     Tree* tree = createTree(); 
     
+    add(tree, 14);
     add(tree, 3);
     add(tree, 9);
+    add(tree, 12);
     add(tree, 2); 
     add(tree, 5);
+    add(tree, 20);
+    add(tree, 7);
     add(tree, 1);
+    add(tree, 15);
     
     printf("In-order traversal: \n");
     inOrder(tree); 
@@ -131,6 +151,9 @@ int main(void) {
 
     printf("Post-order traversal: \n");
     postOrder(tree);
+    
+    printf("DFS traversal: \n");
+    dfsTraversal(tree);
 
     freeTree(tree); 
     return 0; 
